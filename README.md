@@ -8,7 +8,7 @@ Because configuring this extension involves getting your own Google Sheets API k
 
 ## Usage
 
-[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/e68caf6eedbf4e41bc1b170f030e9322-with-play.gif)](https://www.loom.com/share/e68caf6eedbf4e41bc1b170f030e9322)
+[![Watch the demo](https://cdn.loom.com/sessions/thumbnails/8ff596f1eb1a44258d3248a174911231-with-play.gif)](https://www.loom.com/share/8ff596f1eb1a44258d3248a174911231)
 
 1. Navigate to [https://www.linkedin.com/messaging/](https://www.linkedin.com/messaging/).
 1. Wait for the page to finish loading.
