@@ -1,0 +1,41 @@
+{
+  "name": "LunkBin",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Lunkheads to rubbish bin as a service",
+  "homepage_url": "https://www.youtube.com/watch?v=XO46pz51oMo",
+  "icons": {
+    "128": "assets/icon128.png"
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "assets/icon128.png",
+    "default_title": "LunkBin"
+  },
+  "permissions": [
+    "identity",
+    "storage",
+    "https://www.linkedin.com/messaging/*"
+  ],
+  "oauth2": {
+    "client_id": "793630234997-dgihvrcll8vrfpi89salgjlig5o2ngrr.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/spreadsheets"]
+  },
+  "content_security_policy": "script-src 'self' https://apis.google.com/; object-src 'self'",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkphkGdk39Y6NtD5/gRhSzn+5nIekFn85aUIVMB843dAAluiLysU4Zp44Drno6SLLGlPx3E7EX2+E+VmuSU89IbTBUwCoicNBkrO5LWzyfDiBXV7li5D4oN2rEcz2CgO5dN1cIG4SGbClXMnmm18CXYNGI2rrwyePPgCitIKD46K560Hw7dzs4a6NoHLFfwQHUTKvUt+btW2GSpCO9PFxM8V9aybBuh3KL3sZEkLG3AXImUbqfgMhWEDKYVpd2A303I6RZ/FEDYBG1fFucd5STc4OE1Im+uC84dfwJgVC+2hkSl9AZPPlwqjEeDAcaUHTQH1BFe+LA0Gr61WPfSHKDQIDAQAB",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/messaging/*"
+      ],
+      "js": [
+        "assets/jquery.js",
+        "assets/chrono.min.js",
+        "foreground.js"
+      ]
+    }
+  ]
+}
