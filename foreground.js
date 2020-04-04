@@ -99,8 +99,8 @@ function visitMessage(preview) {
 
 
 const LAST_SCRAPED_DATE_KEY = 'lastScrapedDate';
-const MAX_THREADS_TO_SCRAPE = 4;
-const TESTING = false
+const MAX_THREADS_TO_SCRAPE = 5;
+const TESTING = true
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.messageType === "browserClicked") {
